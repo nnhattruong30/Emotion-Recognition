@@ -1,0 +1,47 @@
+html,
+body,
+.view{
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    /* background: rgba(0,0,0,0.5); */
+}
+.view{
+    background: rgba(0,0,0,0.5);
+}
+@media (max-width: 740px) {
+    html,
+    body,
+    .view {
+      height: 100vh;
+    }
+}
+h1{
+    letter-spacing: 8px;
+}
+  
+h5 {
+    letter-spacing: 3px;
+}
+
+.hr-light {
+    border-top: 3px solid #fff;
+    width: 80px;
+}
+img.imgOut{
+    margin: 0 auto;
+    height: 430px;
+    width: auto;
+}
+button#btn-one{
+    width: 200px;
+}
+img#previewImage{
+    margin: 0 auto; 
+    height: 250px; 
+    width: auto; 
+    border-style: solid; 
+    visibility: hidden;
+}

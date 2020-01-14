@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <hr class="hr-light my-4 wow fadeInDown" data-wow-delay="0.4s">
+    <h5 class="text-uppercase mb-4 text-white wow fadeInDown" data-wow-delay="0.4s"><strong>Image Processing & applications</strong></h5>
+    <form method="post" enctype="multipart/form-data" id="form-img">
+        {% csrf_token %}
+        <a class="btn col-md-6 mb-4 btn-outline-white wow fadeInDown" data-wow-delay="0.6s">
+            <label class="control-label" for="id_image"><i class="far fa-clone left"></i>Image</label>
+            <div class="custom-file">
+                <input type="file" name="image" accept="image/*" class='form-control-file' id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                <label class="custom-file-label" for="inputGroupFile01">Choose image</label>
+            </div>
+        </a>
+        <br>
+        <div class="col-12 text-center">
+            <div class='form-group'>
+                <button type="submit" id='btn-one' class="btn btn-outline-white wow fadeInDown" data-wow-delay="0.6s">
+                    Submit
+                </button>
+            </div> 
+        </div>
+    </form>
+
+    <div class='row'>
+        <div class="col-md-12 mb-4">
+            <img id="previewImage" src="#" alt=""/>
+        </div>
+    </div>
+{% endblock content %}

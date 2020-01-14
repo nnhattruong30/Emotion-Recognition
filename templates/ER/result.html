@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+                <div class="row mt-3">
+                    <div class="col-md-12 mb-4 text-white text-center">
+                        <h4 class="h4-responsive text-white font-weight-bold"><strong>Found {{ face }} faces</strong></h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 mb-4 wow" data-wow-delay="0.3s">
+                        <img src="{{ obj.res_image.url }}" class="imgOut" alt="Output image">
+                        <button class="btn btn-dark-green" id="back-btn">Back</button>
+                    </div>
+                </div>
+{% endblock content %}
